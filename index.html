@@ -3,48 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的小程序作品集</title>
+    <title id="page-title">My Mini-Program Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+        <div class="language-switcher">
+            <button id="en-btn" class="lang-btn active">EN</button>
+            <button id="zh-btn" class="lang-btn">中文</button>
+        </div>
+        
         <header>
-            <h1>我的名字</h1>
-            <p>小程序开发者 & 设计师</p>
+            <h1 id="name-title">Your Name</h1>
+            <p id="job-title">Mini-Program Developer & Designer</p>
         </header>
         
         <section class="about">
-            <h2>关于我</h2>
-            <p>我是一个热爱创造小程序的设计师/开发者。专注于简洁、实用的用户体验。</p>
+            <h2 id="about-title">About Me</h2>
+            <p id="about-content">I am a designer/developer passionate about creating mini-programs. Focused on simple, practical user experiences.</p>
         </section>
         
         <section class="projects">
-            <h2>我的小程序</h2>
+            <h2 id="projects-title">My Mini-Programs</h2>
             
             <div class="project-card">
-                <h3>小程序1</h3>
-                <p class="project-description">这是一个解决XX问题的小程序，使用了XX技术。</p>
-                <a href="#" class="project-link">查看详情</a>
+                <h3 id="project1-title">Mini-Program 1</h3>
+                <p id="project1-desc" class="project-description">A mini-program that solves XX problem, using XX technology.</p>
+                <a href="#" class="project-link" id="view-detail">View Details</a>
             </div>
             
             <div class="project-card">
-                <h3>小程序2</h3>
-                <p class="project-description">这是一个专注于XX领域的小程序，具有XX功能。</p>
-                <a href="#" class="project-link">查看详情</a>
+                <h3 id="project2-title">Mini-Program 2</h3>
+                <p id="project2-desc" class="project-description">A mini-program focused on XX field, with XX features.</p>
+                <a href="#" class="project-link">View Details</a>
             </div>
             
             <div class="project-card">
-                <h3>小程序3</h3>
-                <p class="project-description">这是一个为XX人群设计的小程序，解决了XX痛点。</p>
-                <a href="#" class="project-link">查看详情</a>
+                <h3 id="project3-title">Mini-Program 3</h3>
+                <p id="project3-desc" class="project-description">A mini-program designed for XX audience, solving XX pain points.</p>
+                <a href="#" class="project-link">View Details</a>
             </div>
         </section>
         
-        <footer>
-            <p>联系我: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>© 2023 我的名字. 保留所有权利.</p>
+    <footer>
+    <p id="contact-text">Contact me: 
+    <a id="email-link" href="mailto:nanyanjiang@qq.com" style="color: #333; text-decoration: none;">
+        nanyanjiang@qq.com
+    </a>
+    </p>        
+            <p id="copyright"></p>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
